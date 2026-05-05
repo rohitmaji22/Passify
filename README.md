@@ -109,18 +109,6 @@ Assumes a high-end GPU brute-force attack at 10 billion guesses per second.
 
 ---
 
-## 🌌 Background Effect
-
-The space background (`background.js`) uses an HTML5 Canvas with three independent star layers:
-
-| Layer | Count | Parallax Speed | Effect |
-|---|---|---|---|
-| Far | 80 stars | Slowest | Subtle drift |
-| Mid | 50 stars | Medium | Natural depth |
-| Near | 25 stars | Fastest | Cyan tint + glow |
-
-Mouse movement is tracked and smoothly lerped (`+6% per frame`) to create inertia. Stars wrap around screen edges seamlessly. Shooting stars spawn randomly every 4–8 seconds.
-
 ---
 
 ## 🎨 Tech Stack
