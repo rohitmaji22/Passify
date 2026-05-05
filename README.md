@@ -57,9 +57,9 @@
 ## 📸 Preview
 
 <p align="center">
-  <img src="screenshots/image.png" width="300"/>
-  <img src="screenshots/image2.png" width="300"/>
-  <img src="screenshots/image3.png" width="300"/>
+  <img src="image.png" width="300"/>
+  <img src="image2.png" width="300"/>
+  <img src="image3.png" width="300"/>
 </p>
 
 ---
