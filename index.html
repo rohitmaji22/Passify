@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Passify – Password Strength Checker</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- Space background canvas -->
+<canvas id="starCanvas"></canvas>
+
+<div class="page">
+  <div class="card">
+
+    <!-- Branding -->
+    <div class="brand-row">
+      <div class="brand">Passify <span>by Rohit Maji</span></div>
+      <a class="portfolio-btn" href="https://rohitmaji.dev" target="_blank" rel="noopener">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/>
+          <polyline points="15 3 21 3 21 9"/>
+          <line x1="10" y1="14" x2="21" y2="3"/>
+        </svg>
+        Portfolio
+      </a>
+    </div>
+    <h1>Password strength<br>checker</h1>
+
+    <!-- Password field -->
+    <div class="field-label">Password</div>
+    <div class="pw-wrap">
+      <input type="password" id="pw" placeholder="Enter your password…" autocomplete="off" spellcheck="false"/>
+      <button class="toggle-btn" id="tog" aria-label="Toggle password visibility">
+        <svg id="eye-icon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+          <circle cx="12" cy="12" r="3"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Strength meter -->
+    <div class="bar-row">
+      <div class="bar" id="b1"></div>
+      <div class="bar" id="b2"></div>
+      <div class="bar" id="b3"></div>
+      <div class="bar" id="b4"></div>
+    </div>
+    <div class="strength-label" id="slabel">&nbsp;</div>
+
+    <!-- Requirement checks -->
+    <div class="checks">
+      <div class="check" id="c-len">
+        <svg class="check-icon" viewBox="0 0 16 16">
+          <circle cx="8" cy="8" r="7" fill="rgba(255,255,255,0.1)"/>
+          <path d="M5 8l2 2 4-4" stroke="rgba(255,255,255,0.3)" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        8+ characters
+      </div>
+      <div class="check" id="c-upper">
+        <svg class="check-icon" viewBox="0 0 16 16">
+          <circle cx="8" cy="8" r="7" fill="rgba(255,255,255,0.1)"/>
+          <path d="M5 8l2 2 4-4" stroke="rgba(255,255,255,0.3)" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Uppercase letter
+      </div>
+      <div class="check" id="c-lower">
+        <svg class="check-icon" viewBox="0 0 16 16">
+          <circle cx="8" cy="8" r="7" fill="rgba(255,255,255,0.1)"/>
+          <path d="M5 8l2 2 4-4" stroke="rgba(255,255,255,0.3)" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Lowercase letter
+      </div>
+      <div class="check" id="c-num">
+        <svg class="check-icon" viewBox="0 0 16 16">
+          <circle cx="8" cy="8" r="7" fill="rgba(255,255,255,0.1)"/>
+          <path d="M5 8l2 2 4-4" stroke="rgba(255,255,255,0.3)" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Number
+      </div>
+      <div class="check" id="c-sym">
+        <svg class="check-icon" viewBox="0 0 16 16">
+          <circle cx="8" cy="8" r="7" fill="rgba(255,255,255,0.1)"/>
+          <path d="M5 8l2 2 4-4" stroke="rgba(255,255,255,0.3)" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Special character
+      </div>
+      <div class="check" id="c-long">
+        <svg class="check-icon" viewBox="0 0 16 16">
+          <circle cx="8" cy="8" r="7" fill="rgba(255,255,255,0.1)"/>
+          <path d="M5 8l2 2 4-4" stroke="rgba(255,255,255,0.3)" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        16+ characters
+      </div>
+    </div>
+
+    <!-- Crack time estimate -->
+    <div class="crack-box">
+      <div>
+        <div class="crack-label">Estimated time to crack</div>
+        <div class="crack-time" id="crack">—</div>
+      </div>
+      <div class="entropy-badge" id="entropy"></div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">Powered by <span>Passify</span> · Never stores your data</div>
+
+  </div>
+</div>
+
+<!-- Scripts: background first, then checker logic -->
+<script src="background.js"></script>
+<script src="checker.js"></script>
+
+</body>
+</html>
