@@ -126,7 +126,9 @@ Assumes a high-end GPU brute-force attack at 10 billion guesses per second.
 ---
 
 ## 📸 Preview
-
+https://github.com/rohitmaji22/Passify/blob/main/image.png
+https://github.com/rohitmaji22/Passify/blob/main/image2.png
+https://github.com/rohitmaji22/Passify/blob/main/image3.png
 > Dark space theme with multi-layer star parallax, cyan accents, and real-time password analysis.
 
 ---
