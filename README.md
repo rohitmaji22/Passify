@@ -1,4 +1,3 @@
-# Passify
 <div align="center">
 
 <br/>
@@ -141,30 +140,6 @@ Mouse movement is tracked and smoothly lerped (`+6% per frame`) to create inerti
 ## 📸 Preview
 
 > Dark space theme with multi-layer star parallax, cyan accents, and real-time password analysis.
-
----
-
-## 🛠️ Customization
-
-**Change your portfolio URL** — in `index.html`:
-```html
-<a class="portfolio-btn" href="https://your-url.com" ...>
-```
-
-**Adjust star count** — in `background.js`:
-```js
-const LAYERS = [
-  { count: 80, ... },  // far stars
-  { count: 50, ... },  // mid stars
-  { count: 25, ... },  // near stars
-];
-```
-
-**Change accent color** — in `style.css`:
-```css
-/* Replace #00c8ff with your preferred color */
---accent: #00c8ff;
-```
 
 ---
 
