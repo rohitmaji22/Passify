@@ -5,14 +5,15 @@
 ```
                                                     ██████╗  █████╗ ███████╗███████╗██╗███████╗██╗   ██╗
                                                     ██╔══██╗██╔══██╗██╔════╝██╔════╝██║██╔════╝╚██╗ ██╔╝
-                                                    ██████╔╝███████║███████╗███████╗██║█████╗   ╚████╔╝ 
+                                                    ██████╔╝███████║███████╗███████╗██║█████╗   ╚████╔╝
+                                                    ██╔═══╝ ██╔══██║╚════██║╚════██║██║██╔══╝    ╚██╔╝  
                                                     ██║     ██║  ██║███████║███████║██║██║        ██║   
                                                     ╚═╝     ╚═╝  ╚═╝╚══════╝╚══════╝╚═╝╚═╝        ╚═╝  
 ```
 
 **A sleek, client-side password strength checker with a live space background.**
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit%20Site-00c8ff?style=for-the-badge&logo=vercel&logoColor=white)](https://rohitmaji22.github.io/Passify/))
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit%20Site-00c8ff?style=for-the-badge&logo=vercel&logoColor=white)](https://rohitmaji22.github.io/Passify/)
 [![Made by Rohit](https://img.shields.io/badge/Made%20by-Rohit%20Maji-ffffff?style=for-the-badge)](https://rohitmaji.dev)
 [![License](https://img.shields.io/badge/License-MIT-5de8a0?style=for-the-badge)](LICENSE)
 ![No Dependencies](https://img.shields.io/badge/Dependencies-Zero-EF9F27?style=for-the-badge)
