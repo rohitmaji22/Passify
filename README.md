@@ -2,21 +2,25 @@
 
 <br/>
 
+<pre>
+██████╗  █████╗ ███████╗███████╗██╗███████╗██╗   ██╗
+██╔══██╗██╔══██╗██╔════╝██╔════╝██║██╔════╝╚██╗ ██╔╝
+██████╔╝███████║███████╗███████╗██║█████╗   ╚████╔╝
+██╔═══╝ ██╔══██║╚════██║╚════██║██║██╔══╝    ╚██╔╝
+██║     ██║  ██║███████║███████║██║██║        ██║
+╚═╝     ╚═╝  ╚═╝╚══════╝╚══════╝╚═╝╚═╝        ╚═╝
+</pre>
 
-                                                    ██████╗  █████╗ ███████╗███████╗██╗███████╗██╗   ██╗
-                                                    ██╔══██╗██╔══██╗██╔════╝██╔════╝██║██╔════╝╚██╗ ██╔╝
-                                                   ██████╔╝███████║███████╗███████╗██║█████╗   ╚████╔╝
-                                                    ██╔═══╝ ██╔══██║╚════██║╚════██║██║██╔══╝    ╚██╔╝  
-                                                    ██║     ██║  ██║███████║███████║██║██║        ██║   
-                                                   ╚═╝     ╚═╝  ╚═╝╚══════╝╚══════╝╚═╝╚═╝        ╚═╝  
+### 🔐 Passify — Password Strength Checker
 
+**A sleek, privacy-first password strength checker with a dynamic space UI**
 
-**A sleek, client-side password strength checker with a live space background.**
+<br/>
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit%20Site-00c8ff?style=for-the-badge&logo=vercel&logoColor=white)](https://rohitmaji22.github.io/Passify/)
-[![Made by Rohit](https://img.shields.io/badge/Made%20by-Rohit%20Maji-ffffff?style=for-the-badge)](https://rohitmaji.dev)
-[![License](https://img.shields.io/badge/License-MIT-5de8a0?style=for-the-badge)](LICENSE)
-![No Dependencies](https://img.shields.io/badge/Dependencies-Zero-EF9F27?style=for-the-badge)
+[![Live Demo](https://img.shields.io/badge/🚀%20Live%20Demo-Visit%20Site-00c8ff?style=for-the-badge)](https://rohitmaji22.github.io/Passify/)
+[![License](https://img.shields.io/badge/License-MIT-5de8a0?style=for-the-badge)]
+![Zero Dependencies](https://img.shields.io/badge/Dependencies-Zero-EF9F27?style=for-the-badge)
+![Made With JS](https://img.shields.io/badge/Made%20With-JavaScript-F7DF1E?style=for-the-badge\&logo=javascript\&logoColor=black)
 
 <br/>
 
@@ -24,16 +28,46 @@
 
 ---
 
+## 🌌 Overview
+
+**Passify** is a lightweight, fully client-side password strength analyzer that provides:
+
+* Real-time feedback ⚡
+* Entropy-based strength calculation 🧠
+* Crack-time estimation ⏱️
+* A visually engaging **space-themed UI** 🌠
+
+> 🔒 **No data is ever stored or transmitted. Everything runs locally in your browser.**
+
+---
+
 ## ✨ Features
 
-- 🔐 **Real-time strength analysis** — instant feedback as you type
-- 📊 **Entropy calculation** — measures true password randomness in bits
-- ⏱️ **Crack time estimate** — based on 10 billion guesses/second (GPU attack)
-- ✅ **6 requirement checks** — length, uppercase, lowercase, numbers, symbols, 16+ chars
-- 🌌 **Interactive space background** — multi-layer star parallax that follows your mouse
-- ☄️ **Shooting stars** — occasional comets streak across the background
-- 👁️ **Show/hide toggle** — reveal your password while typing
-- 🔒 **100% private** — nothing is ever sent to a server or stored anywhere
+* 🔐 Real-time password strength analysis
+* 📊 Entropy calculation (bits-based security)
+* ⏱️ Crack time estimation (GPU attack model)
+* ✅ 6 advanced validation checks
+* 👁️ Show / hide password toggle
+* 🌌 Interactive starfield background (parallax effect)
+* ☄️ Shooting star animations
+* 🔒 100% client-side (zero backend)
+
+---
+
+## 📸 Preview
+
+<p align="center">
+  <img src="screenshots/image.png" width="300"/>
+  <img src="screenshots/image2.png" width="300"/>
+  <img src="screenshots/image3.png" width="300"/>
+</p>
+
+---
+
+## 🚀 Live Demo
+
+👉 **Try it here:**
+https://rohitmaji22.github.io/Passify/
 
 ---
 
@@ -41,111 +75,95 @@
 
 ```
 passify/
-├── index.html       # Main HTML — markup & structure
-├── style.css        # All styling, dark space theme, responsive layout
-├── background.js    # Animated starfield with mouse-parallax & shooting stars
-└── checker.js       # Password analysis logic — entropy, scoring, crack time
+├── index.html       # UI structure
+├── style.css        # Styling & animations
+├── background.js    # Starfield & parallax logic
+└── checker.js       # Password strength logic
 ```
-
-> Each file is fully self-contained with its own responsibility. No build tools, no bundlers, no frameworks.
 
 ---
 
-## 🚀 Getting Started
+## ⚙️ Getting Started
 
-**Option 1 — Just open it:**
+### Option 1 — Run directly
+
 ```bash
-git clone https://github.com/rohitmaji/passify.git
-cd passify
-open index.html   # macOS
-# or double-click index.html on Windows/Linux
+git clone https://github.com/rohitmaji22/Passify.git
+cd Passify
+open index.html
 ```
 
-**Option 2 — Serve locally:**
-```bash
-# Python
-python -m http.server 3000
+### Option 2 — Local server
 
-# Node
+```bash
+python -m http.server 3000
+# or
 npx serve .
 ```
 
-Then visit `http://localhost:3000`
+Open → http://localhost:3000
 
 ---
 
-## 🧠 How It Works
+## 🧠 Core Logic
 
-### Strength Scoring
-Each password is evaluated against 6 criteria — each worth 1 point:
+### 🔢 Strength Score
 
-| Criteria | Points |
-|---|---|
-| 8 or more characters | +1 |
-| Contains uppercase letter | +1 |
-| Contains lowercase letter | +1 |
-| Contains a number | +1 |
-| Contains a special character | +1 |
-| 16 or more characters | +1 |
+* Based on 6 conditions (length, case, digits, symbols, etc.)
+* Score range: **0 → 6**
 
-| Score | Rating |
-|---|---|
-| 0–2 | 🔴 Weak |
-| 3 | 🟠 Fair |
-| 4 | 🟢 Good |
-| 5–6 | 🔵 Strong |
+### 📊 Entropy Formula
 
-### Entropy Formula
 ```
-entropy (bits) = length × log₂(pool_size)
+entropy = length × log₂(character_pool)
 ```
-Where `pool_size` is the number of unique characters available (26 lowercase + 26 uppercase + 10 digits + 32 symbols).
 
-### Crack Time Estimate
-```
-seconds_to_crack = 2^entropy_bits / 10,000,000,000
-```
-Assumes a high-end GPU brute-force attack at 10 billion guesses per second.
+### ⏱️ Crack Time
 
----
+```
+time = 2^entropy / 10^10 guesses/sec
+```
 
 ---
 
 ## 🎨 Tech Stack
 
-| Technology | Usage |
-|---|---|
-| HTML5 | Structure & semantics |
-| CSS3 | Styling, transitions, grid layout |
-| Vanilla JS | All logic, canvas animation |
-| Canvas API | Starfield & parallax background |
-| Google Fonts | Syne (display) + Space Mono (code) |
+| Tech       | Purpose              |
+| ---------- | -------------------- |
+| HTML5      | Structure            |
+| CSS3       | Styling & UI         |
+| JavaScript | Logic                |
+| Canvas API | Background animation |
 
-**Zero npm. Zero frameworks. Zero build steps.**
+> ⚡ No frameworks. No libraries. Pure performance.
 
 ---
 
-## 📸 Preview
+## 🔐 Security Note
 
-## 📸 
+This tool is designed for **educational and awareness purposes only**.
 
-![Home Page](screenshots/image.png)
-https://github.com/rohitmaji22/Passify/blob/main/image.png
-https://github.com/rohitmaji22/Passify/blob/main/image2.png
-https://github.com/rohitmaji22/Passify/blob/main/image3.png
-> Dark space theme with multi-layer star parallax, cyan accents, and real-time password analysis.
+* Does NOT store passwords
+* Does NOT send data anywhere
+* Safe for offline usage
 
 ---
 
 ## 📄 License
 
-MIT License — free to use, modify, and distribute.  
-Built with 💙 by **[Rohit Maji](https://rohitmaji.dev)** · Aspiring Cybersecurity Professional
+MIT License — free to use and modify.
+
+---
+
+## 👨‍💻 Author
+
+**Rohit Maji**
+🌐 https://rohitmaji.dev
 
 ---
 
 <div align="center">
 
-⭐ **Star this repo if you found it useful!**
+⭐ If you like this project, consider giving it a star!
 
 </div>
